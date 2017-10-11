@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C1D46601F8DE63A00325861 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D465F1F8DE63A00325861 /* Car.m */; };
+		4C1D46631F8DEC6B00325861 /* MyDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D46621F8DEC6B00325861 /* MyDelegate.m */; };
+		4C1D46681F8DFA0400325861 /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D46671F8DFA0400325861 /* MyLabel.m */; };
 		4C2518E71F8DAEC2002FA8DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2518E61F8DAEC2002FA8DE /* AppDelegate.m */; };
 		4C2518EA1F8DAEC2002FA8DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2518E91F8DAEC2002FA8DE /* ViewController.m */; };
 		4C2518ED1F8DAEC2002FA8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2518EB1F8DAEC2002FA8DE /* Main.storyboard */; };
@@ -19,6 +21,10 @@
 /* Begin PBXFileReference section */
 		4C1D465E1F8DE63A00325861 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		4C1D465F1F8DE63A00325861 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		4C1D46611F8DEC6B00325861 /* MyDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDelegate.h; sourceTree = "<group>"; };
+		4C1D46621F8DEC6B00325861 /* MyDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDelegate.m; sourceTree = "<group>"; };
+		4C1D46661F8DFA0400325861 /* MyLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
+		4C1D46671F8DFA0400325861 /* MyLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
 		4C2518E21F8DAEC2002FA8DE /* IIIDemoLong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IIIDemoLong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2518E51F8DAEC2002FA8DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C2518E61F8DAEC2002FA8DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C1D46641F8DF21800325861 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4C1D46661F8DFA0400325861 /* MyLabel.h */,
+				4C1D46671F8DFA0400325861 /* MyLabel.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4C1D46651F8DF22D00325861 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		4C2518D91F8DAEC2002FA8DE = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +83,8 @@
 		4C2518E41F8DAEC2002FA8DE /* IIIDemoLong */ = {
 			isa = PBXGroup;
 			children = (
+				4C1D46651F8DF22D00325861 /* model */,
+				4C1D46641F8DF21800325861 /* view */,
 				4C2518E51F8DAEC2002FA8DE /* AppDelegate.h */,
 				4C2518E61F8DAEC2002FA8DE /* AppDelegate.m */,
 				4C2518E81F8DAEC2002FA8DE /* ViewController.h */,
@@ -72,6 +96,8 @@
 				4C2518F41F8DAEC2002FA8DE /* main.m */,
 				4C1D465E1F8DE63A00325861 /* Car.h */,
 				4C1D465F1F8DE63A00325861 /* Car.m */,
+				4C1D46611F8DEC6B00325861 /* MyDelegate.h */,
+				4C1D46621F8DEC6B00325861 /* MyDelegate.m */,
 			);
 			path = IIIDemoLong;
 			sourceTree = "<group>";
@@ -147,9 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1D46681F8DFA0400325861 /* MyLabel.m in Sources */,
 				4C2518EA1F8DAEC2002FA8DE /* ViewController.m in Sources */,
 				4C2518F51F8DAEC2002FA8DE /* main.m in Sources */,
 				4C1D46601F8DE63A00325861 /* Car.m in Sources */,
+				4C1D46631F8DEC6B00325861 /* MyDelegate.m in Sources */,
 				4C2518E71F8DAEC2002FA8DE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

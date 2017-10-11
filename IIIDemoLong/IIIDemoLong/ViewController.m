@@ -9,13 +9,16 @@
 #import "ViewController.h"
 
 @interface ViewController ()<UIImagePickerControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 //    NSMutableArray<NSString *> * cars = [@[] mutableCopy];
 //
 //    NSNumber * num = @8;
@@ -45,6 +48,19 @@
     
     NSLog(@"%@",self.view);
 //    NSLog(@"%@",view);
+    
+    [self.myButton addTarget:self action:@selector(hello:event:) forControlEvents:UIControlEventTouchUpInside];
+}
+-(void) hello{
+    NSLog(@"hello");
+}
+
+-(void) hello:(UIButton *) sender {
+    NSLog(@"hello sender");
+}
+
+-(void) hello:(UIButton *) sender  event:(UIEvent *) event{
+    NSLog(@"hello sender event");
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     NSLog(@"%@",info);
@@ -54,6 +70,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)stepper:(UIStepper *)sender {
+    NSLog(@"%f",sender.value);
 }
 
 
