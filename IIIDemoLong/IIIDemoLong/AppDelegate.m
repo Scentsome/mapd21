@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Car.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    NSLog(@"Hello");
+    Car * car = [Car new];
+    car.price = 345;
+    NSLog(@"%d",car.price);
     return YES;
 }
 

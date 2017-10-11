@@ -9,5 +9,18 @@
 #import "Car.h"
 
 @implementation Car
-
+//@synthesize  price = vPrice;
+-(void) print{
+    NSLog(@"%d",_price);
+}
+//{
+//    int _price;
+//}
+//-(void) setPrice:(int) newPrice{
+////    NSLog(@"new pricew");
+//    _price = newPrice;
+//}
+//-(int) price{
+//    return _price;
+//}
 @end

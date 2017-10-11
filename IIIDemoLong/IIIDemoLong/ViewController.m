@@ -22,11 +22,29 @@
 //
 //    [cars addObject:@"Toyota"];
 //    [cars addObject:num];
-    UIImagePickerController * picker = [UIImagePickerController new];
     
-    picker.delegate = self;
+    NSDictionary * json = @{
+        @"time": @"03:53:25 AM",
+        @"milliseconds_since_epoch": @1362196405309,
+        @"date": @"03-02-2013"
+        };
+    for ( NSString * key in json.allKeys ){
+        
+        id value = json[key];
+    }
     
+    [json enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        
+    }];
     
+    NSArray * testArray = [NSArray arrayWithObjects:@"one", @"two", @"three",@"four",@"five",nil];
+    
+    [testArray enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"%@", obj);
+    }];
+    
+    NSLog(@"%@",self.view);
+//    NSLog(@"%@",view);
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     NSLog(@"%@",info);

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1D46601F8DE63A00325861 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D465F1F8DE63A00325861 /* Car.m */; };
 		4C2518E71F8DAEC2002FA8DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2518E61F8DAEC2002FA8DE /* AppDelegate.m */; };
 		4C2518EA1F8DAEC2002FA8DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2518E91F8DAEC2002FA8DE /* ViewController.m */; };
 		4C2518ED1F8DAEC2002FA8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2518EB1F8DAEC2002FA8DE /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C1D465E1F8DE63A00325861 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		4C1D465F1F8DE63A00325861 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		4C2518E21F8DAEC2002FA8DE /* IIIDemoLong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IIIDemoLong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2518E51F8DAEC2002FA8DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C2518E61F8DAEC2002FA8DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				4C2518F01F8DAEC2002FA8DE /* LaunchScreen.storyboard */,
 				4C2518F31F8DAEC2002FA8DE /* Info.plist */,
 				4C2518F41F8DAEC2002FA8DE /* main.m */,
+				4C1D465E1F8DE63A00325861 /* Car.h */,
+				4C1D465F1F8DE63A00325861 /* Car.m */,
 			);
 			path = IIIDemoLong;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			files = (
 				4C2518EA1F8DAEC2002FA8DE /* ViewController.m in Sources */,
 				4C2518F51F8DAEC2002FA8DE /* main.m in Sources */,
+				4C1D46601F8DE63A00325861 /* Car.m in Sources */,
 				4C2518E71F8DAEC2002FA8DE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
