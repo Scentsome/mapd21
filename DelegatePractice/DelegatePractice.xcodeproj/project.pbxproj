@@ -13,6 +13,7 @@
 		4C1D464F1F8DC09600325861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D464E1F8DC09600325861 /* Assets.xcassets */; };
 		4C1D46521F8DC09600325861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1D46501F8DC09600325861 /* LaunchScreen.storyboard */; };
 		4C1D46551F8DC09600325861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D46541F8DC09600325861 /* main.m */; };
+		4C1D465D1F8DC12100325861 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D465C1F8DC12100325861 /* InputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4C1D46511F8DC09600325861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1D46531F8DC09600325861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C1D46541F8DC09600325861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C1D465B1F8DC12100325861 /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		4C1D465C1F8DC12100325861 /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				4C1D46501F8DC09600325861 /* LaunchScreen.storyboard */,
 				4C1D46531F8DC09600325861 /* Info.plist */,
 				4C1D46541F8DC09600325861 /* main.m */,
+				4C1D465B1F8DC12100325861 /* InputViewController.h */,
+				4C1D465C1F8DC12100325861 /* InputViewController.m */,
 			);
 			path = DelegatePractice;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				4C1D464A1F8DC09600325861 /* ViewController.m in Sources */,
 				4C1D46551F8DC09600325861 /* main.m in Sources */,
 				4C1D46471F8DC09600325861 /* AppDelegate.m in Sources */,
+				4C1D465D1F8DC12100325861 /* InputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

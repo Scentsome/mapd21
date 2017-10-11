@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property int day;
 
+@property int  (^myBlock) (int,int);
+
+-(void) funcInt:(int) day;
+-(void) funcBlock:(int  (^) (int,int)) myBlock;
 @end
 
