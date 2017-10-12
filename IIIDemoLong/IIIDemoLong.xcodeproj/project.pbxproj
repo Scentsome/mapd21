@@ -16,6 +16,7 @@
 		4C2518EF1F8DAEC2002FA8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2518EE1F8DAEC2002FA8DE /* Assets.xcassets */; };
 		4C2518F21F8DAEC2002FA8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2518F01F8DAEC2002FA8DE /* LaunchScreen.storyboard */; };
 		4C2518F51F8DAEC2002FA8DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2518F41F8DAEC2002FA8DE /* main.m */; };
+		4C2533C31F8F15A800C1A2CA /* DrawPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533C21F8F15A800C1A2CA /* DrawPad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		4C2518F11F8DAEC2002FA8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C2518F31F8DAEC2002FA8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2518F41F8DAEC2002FA8DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C2533C11F8F15A800C1A2CA /* DrawPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawPad.h; sourceTree = "<group>"; };
+		4C2533C21F8F15A800C1A2CA /* DrawPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPad.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,8 @@
 			children = (
 				4C1D46661F8DFA0400325861 /* MyLabel.h */,
 				4C1D46671F8DFA0400325861 /* MyLabel.m */,
+				4C2533C11F8F15A800C1A2CA /* DrawPad.h */,
+				4C2533C21F8F15A800C1A2CA /* DrawPad.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				4C2518EA1F8DAEC2002FA8DE /* ViewController.m in Sources */,
 				4C2518F51F8DAEC2002FA8DE /* main.m in Sources */,
 				4C1D46601F8DE63A00325861 /* Car.m in Sources */,
+				4C2533C31F8F15A800C1A2CA /* DrawPad.m in Sources */,
 				4C1D46631F8DEC6B00325861 /* MyDelegate.m in Sources */,
 				4C2518E71F8DAEC2002FA8DE /* AppDelegate.m in Sources */,
 			);

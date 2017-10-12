@@ -13,6 +13,12 @@
 		4C2533B11F8F123100C1A2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533B01F8F123100C1A2CA /* Assets.xcassets */; };
 		4C2533B41F8F123100C1A2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533B21F8F123100C1A2CA /* LaunchScreen.storyboard */; };
 		4C2533B71F8F123100C1A2CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533B61F8F123100C1A2CA /* main.m */; };
+		4C2533BE1F8F129100C1A2CA /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533BD1F8F127A00C1A2CA /* Inceptionv3.mlmodel */; };
+		4C2533C41F8F1C3D00C1A2CA /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533C01F8F13F800C1A2CA /* chicken.jpg */; };
+		4C2533C51F8F1C4100C1A2CA /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533BF1F8F13F700C1A2CA /* dog.jpg */; };
+		4C2533C81F8F1CAF00C1A2CA /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533C61F8F1C8E00C1A2CA /* cat.jpg */; };
+		4C2533CA1F8F1CEB00C1A2CA /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533C91F8F1CE700C1A2CA /* flower.jpg */; };
+		4C2533CC1F8F1D7700C1A2CA /* moto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533CB1F8F1D7300C1A2CA /* moto.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		4C2533B31F8F123100C1A2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C2533B51F8F123100C1A2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2533B61F8F123100C1A2CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C2533BD1F8F127A00C1A2CA /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4C2533BF1F8F13F700C1A2CA /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		4C2533C01F8F13F800C1A2CA /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicken.jpg; sourceTree = "<group>"; };
+		4C2533C61F8F1C8E00C1A2CA /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		4C2533C91F8F1CE700C1A2CA /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
+		4C2533CB1F8F1D7300C1A2CA /* moto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moto.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 		4C2533A61F8F123100C1A2CA /* PredictImage */ = {
 			isa = PBXGroup;
 			children = (
+				4C2533CB1F8F1D7300C1A2CA /* moto.jpg */,
+				4C2533C91F8F1CE700C1A2CA /* flower.jpg */,
+				4C2533C61F8F1C8E00C1A2CA /* cat.jpg */,
+				4C2533C01F8F13F800C1A2CA /* chicken.jpg */,
+				4C2533BF1F8F13F700C1A2CA /* dog.jpg */,
+				4C2533BD1F8F127A00C1A2CA /* Inceptionv3.mlmodel */,
 				4C2533A71F8F123100C1A2CA /* AppDelegate.h */,
 				4C2533A81F8F123100C1A2CA /* AppDelegate.m */,
 				4C2533AA1F8F123100C1A2CA /* ViewController.h */,
@@ -129,9 +147,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2533C81F8F1CAF00C1A2CA /* cat.jpg in Resources */,
 				4C2533B41F8F123100C1A2CA /* LaunchScreen.storyboard in Resources */,
+				4C2533C51F8F1C4100C1A2CA /* dog.jpg in Resources */,
+				4C2533CA1F8F1CEB00C1A2CA /* flower.jpg in Resources */,
 				4C2533B11F8F123100C1A2CA /* Assets.xcassets in Resources */,
 				4C2533AF1F8F123100C1A2CA /* Main.storyboard in Resources */,
+				4C2533CC1F8F1D7700C1A2CA /* moto.jpg in Resources */,
+				4C2533C41F8F1C3D00C1A2CA /* chicken.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2533AC1F8F123100C1A2CA /* ViewController.m in Sources */,
+				4C2533BE1F8F129100C1A2CA /* Inceptionv3.mlmodel in Sources */,
 				4C2533B71F8F123100C1A2CA /* main.m in Sources */,
 				4C2533A91F8F123100C1A2CA /* AppDelegate.m in Sources */,
 			);
