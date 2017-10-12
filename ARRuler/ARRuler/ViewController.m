@@ -7,9 +7,27 @@
 //
 
 #import "ViewController.h"
+#import "ARRuler-Swift.h"
+
 @import ARKit;
 //#import <ARKit/ARKit.h>
 @import SceneKit;
+
+
+
+
+SCNVector3 postionFromMatrix(matrix_float4x4 matrix){
+    simd_float4 column = matrix.columns[3];
+    return SCNVector3Make(column.x, column.y, column.z);
+}
+
+CGFloat distanceToDestination(SCNVector3 origin, SCNVector3 dest){
+    CGFloat dx = dest.x - origin.x;
+    CGFloat dy = dest.y - origin.y;
+    CGFloat dz = dest.z - origin.z;
+    return sqrt(dx*dx + dy*dy + dz*dz);
+}
+
 
 
 @interface ViewController ()<ARSCNViewDelegate>
@@ -34,6 +52,28 @@
     self.msgLabel.textAlignment = NSTextAlignmentCenter ;
     self.msgLabel.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.msgLabel];
+    
+    UITapGestureRecognizer * tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    tapRecognizer.numberOfTapsRequired = 1;
+    [self.sceneView addGestureRecognizer:tapRecognizer];
+}
+
+-(void) handleTap:(UITapGestureRecognizer *) sender {
+    CGPoint tapLocation = [sender locationInView:self.sceneView];
+    NSArray * hitTestResults = [self.sceneView hitTest:tapLocation types:ARHitTestResultTypeFeaturePoint];
+    if ([hitTestResults firstObject] != nil) {
+        
+        ARHitTestResult * result = [hitTestResults firstObject];
+        SCNVector3 position = postionFromMatrix(result.worldTransform);
+        SphereNode * sphere = [[SphereNode alloc] initWithPosition:position];
+        [self.sceneView.scene.rootNode addChildNode:sphere];
+        SphereNode * lastNode = [nodes lastObject];
+        [nodes addObject:sphere];
+        if (lastNode != nil){
+            CGFloat distance = distanceToDestination(lastNode.position, sphere.position);
+            self.msgLabel.text = [NSString stringWithFormat:@"Distance: %.2f meters",distance];
+        }
+    }
 }
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];

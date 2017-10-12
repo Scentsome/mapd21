@@ -74,6 +74,10 @@
 - (IBAction)stepper:(UIStepper *)sender {
     NSLog(@"%f",sender.value);
 }
+- (IBAction)swipeToRight:(id)sender {
+    
+    NSLog(@"Swipe");
+}
 
 
 @end

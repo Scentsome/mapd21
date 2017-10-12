@@ -38,13 +38,22 @@
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="St8-c1-iws" appends="YES" id="pJ2-WC-Vo4"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="tIB-90-suw" id="GFs-Lz-Adb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="St8-c1-iws">
+                    <connections>
+                        <action selector="swipeToRight:" destination="BYZ-38-t0r" id="XcX-Wh-juU"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1020" y="-290"/>
         </scene>
