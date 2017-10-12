@@ -6,13 +6,13 @@
 //  Copyright © 2017 Zencher. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DocumentViewController.h"
 
-@interface ViewController ()
+@interface DocumentViewController ()
 
 @end
 
-@implementation ViewController
+@implementation DocumentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

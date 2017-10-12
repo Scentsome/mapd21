@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		4C2533DB1F8F37A400C1A2CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533DA1F8F37A400C1A2CA /* AppDelegate.m */; };
-		4C2533DE1F8F37A400C1A2CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533DD1F8F37A400C1A2CA /* ViewController.m */; };
+		4C2533DE1F8F37A400C1A2CA /* DocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533DD1F8F37A400C1A2CA /* DocumentViewController.m */; };
 		4C2533E11F8F37A400C1A2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533DF1F8F37A400C1A2CA /* Main.storyboard */; };
 		4C2533E31F8F37A400C1A2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533E21F8F37A400C1A2CA /* Assets.xcassets */; };
 		4C2533E61F8F37A400C1A2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533E41F8F37A400C1A2CA /* LaunchScreen.storyboard */; };
 		4C2533E91F8F37A400C1A2CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533E81F8F37A400C1A2CA /* main.m */; };
+		4C2533F11F8F393400C1A2CA /* ContractsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533F01F8F393400C1A2CA /* ContractsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C2533D61F8F37A400C1A2CA /* PDFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2533D91F8F37A400C1A2CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C2533DA1F8F37A400C1A2CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C2533DC1F8F37A400C1A2CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C2533DD1F8F37A400C1A2CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C2533DC1F8F37A400C1A2CA /* DocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentViewController.h; sourceTree = "<group>"; };
+		4C2533DD1F8F37A400C1A2CA /* DocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentViewController.m; sourceTree = "<group>"; };
 		4C2533E01F8F37A400C1A2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C2533E21F8F37A400C1A2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C2533E51F8F37A400C1A2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C2533E71F8F37A400C1A2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2533E81F8F37A400C1A2CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C2533EF1F8F393400C1A2CA /* ContractsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractsTableViewController.h; sourceTree = "<group>"; };
+		4C2533F01F8F393400C1A2CA /* ContractsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContractsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +63,15 @@
 			children = (
 				4C2533D91F8F37A400C1A2CA /* AppDelegate.h */,
 				4C2533DA1F8F37A400C1A2CA /* AppDelegate.m */,
-				4C2533DC1F8F37A400C1A2CA /* ViewController.h */,
-				4C2533DD1F8F37A400C1A2CA /* ViewController.m */,
+				4C2533DC1F8F37A400C1A2CA /* DocumentViewController.h */,
+				4C2533DD1F8F37A400C1A2CA /* DocumentViewController.m */,
 				4C2533DF1F8F37A400C1A2CA /* Main.storyboard */,
 				4C2533E21F8F37A400C1A2CA /* Assets.xcassets */,
 				4C2533E41F8F37A400C1A2CA /* LaunchScreen.storyboard */,
 				4C2533E71F8F37A400C1A2CA /* Info.plist */,
 				4C2533E81F8F37A400C1A2CA /* main.m */,
+				4C2533EF1F8F393400C1A2CA /* ContractsTableViewController.h */,
+				4C2533F01F8F393400C1A2CA /* ContractsTableViewController.m */,
 			);
 			path = PDFViewer;
 			sourceTree = "<group>";
@@ -142,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2533DE1F8F37A400C1A2CA /* ViewController.m in Sources */,
+				4C2533DE1F8F37A400C1A2CA /* DocumentViewController.m in Sources */,
+				4C2533F11F8F393400C1A2CA /* ContractsTableViewController.m in Sources */,
 				4C2533E91F8F37A400C1A2CA /* main.m in Sources */,
 				4C2533DB1F8F37A400C1A2CA /* AppDelegate.m in Sources */,
 			);

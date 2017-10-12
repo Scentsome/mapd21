@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ContractsTableViewController.h
 //  PDFViewer
 //
 //  Created by Michael on 12/10/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ContractsTableViewController : UITableViewController
 
 @end
-
