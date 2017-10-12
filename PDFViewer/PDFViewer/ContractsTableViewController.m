@@ -8,6 +8,7 @@
 
 #import "ContractsTableViewController.h"
 #import "DocumentViewController.h"
+#import "FSHelper.h"
 @interface ContractsTableViewController ()<DocumentViewControllerDelegate>
 @property NSArray * documents;
 
@@ -19,7 +20,7 @@
 -(void) loadDocuments {
     NSError * error;
     
-    self.documents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[self contractsDirectory] error:&error];
+    self.documents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[FSHelper new] contractsDirectory] error:&error];
     if(error) {
         NSLog(@"%@",error);
     }
@@ -27,23 +28,23 @@
     [self.tableView reloadData];
 }
 
--(NSString *) contractsDirectory {
-    
-    NSURL * contractsURL = [[NSURL fileURLWithPath:NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,   NSUserDomainMask, YES)[0]] URLByAppendingPathComponent:@"contracts"];
-    
-    NSString * contractsPath = [NSString stringWithFormat:@"%@", contractsURL.path];
-    NSLog(@"%@",contractsURL.path);
-    
-    if (![[NSFileManager defaultManager] fileExistsAtPath:contractsPath]) {
-        
-        NSError * error;
-        [[NSFileManager defaultManager] createDirectoryAtPath:contractsPath withIntermediateDirectories:YES attributes:nil error:&error];
-        if(error) {
-            NSLog(@"Creating dir error %@",error);
-        }
-    }
-    return contractsPath;
-}
+//-(NSString *) contractsDirectory {
+//
+//    NSURL * contractsURL = [[NSURL fileURLWithPath:NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,   NSUserDomainMask, YES)[0]] URLByAppendingPathComponent:@"contracts"];
+//
+//    NSString * contractsPath = [NSString stringWithFormat:@"%@", contractsURL.path];
+//    NSLog(@"%@",contractsURL.path);
+//
+//    if (![[NSFileManager defaultManager] fileExistsAtPath:contractsPath]) {
+//
+//        NSError * error;
+//        [[NSFileManager defaultManager] createDirectoryAtPath:contractsPath withIntermediateDirectories:YES attributes:nil error:&error];
+//        if(error) {
+//            NSLog(@"Creating dir error %@",error);
+//        }
+//    }
+//    return contractsPath;
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadDocuments];
@@ -139,7 +140,7 @@
         vc.addAnnotations = NO;
         vc.title = document;
         
-        NSURL * url = [[NSURL fileURLWithPath:[self contractsDirectory]] URLByAppendingPathComponent:document];
+        NSURL * url = [[NSURL fileURLWithPath:[[FSHelper sharedObject] contractsDirectory]] URLByAppendingPathComponent:document];
         NSData * data = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@", url.path]];
         
         vc.document = [[PDFDocument alloc] initWithData:data];

@@ -7,7 +7,7 @@
 //
 
 #import "DocumentViewController.h"
-
+#import "FSHelper.h"
 @interface DocumentViewController ()
 @property (weak, nonatomic) IBOutlet PDFView *pdfView;
 
@@ -112,29 +112,29 @@
     if (contracteeName != nil) {
         NSString * displayName = [contracteeName stringByReplacingOccurrencesOfString:@" " withString:@"_"];
         displayName = [NSString stringWithFormat:@"%@.pdf", displayName];
-        NSURL * dirURL = [NSURL fileURLWithPath:[self contractsDirectory]];
+        NSURL * dirURL = [NSURL fileURLWithPath:[[FSHelper sharedObject] contractsDirectory]];
         NSURL * savePathURL = [dirURL URLByAppendingPathComponent:displayName];
         [self.document writeToFile:[NSString stringWithFormat:@"%@", savePathURL.path] withOptions:nil];
         [self.delegate didSaveDocument];
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
--(NSString *) contractsDirectory {
-    
-    NSURL * contractsURL = [[NSURL fileURLWithPath:NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,   NSUserDomainMask, YES)[0]] URLByAppendingPathComponent:@"contracts"];
-    
-    NSString * contractsPath = [NSString stringWithFormat:@"%@", contractsURL.path];
-    NSLog(@"%@",contractsURL.path);
-    
-    if (![[NSFileManager defaultManager] fileExistsAtPath:contractsPath]) {
-        
-        NSError * error;
-        [[NSFileManager defaultManager] createDirectoryAtPath:contractsPath withIntermediateDirectories:YES attributes:nil error:&error];
-        if(error) {
-            NSLog(@"Creating dir error %@",error);
-        }
-    }
-    return contractsPath;
-}
+//-(NSString *) contractsDirectory {
+//
+//    NSURL * contractsURL = [[NSURL fileURLWithPath:NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,   NSUserDomainMask, YES)[0]] URLByAppendingPathComponent:@"contracts"];
+//
+//    NSString * contractsPath = [NSString stringWithFormat:@"%@", contractsURL.path];
+//    NSLog(@"%@",contractsURL.path);
+//
+//    if (![[NSFileManager defaultManager] fileExistsAtPath:contractsPath]) {
+//
+//        NSError * error;
+//        [[NSFileManager defaultManager] createDirectoryAtPath:contractsPath withIntermediateDirectories:YES attributes:nil error:&error];
+//        if(error) {
+//            NSLog(@"Creating dir error %@",error);
+//        }
+//    }
+//    return contractsPath;
+//}
 
 @end

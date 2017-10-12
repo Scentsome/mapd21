@@ -15,6 +15,7 @@
 		4C2533E91F8F37A400C1A2CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533E81F8F37A400C1A2CA /* main.m */; };
 		4C2533F11F8F393400C1A2CA /* ContractsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533F01F8F393400C1A2CA /* ContractsTableViewController.m */; };
 		4C2533F31F8F42E300C1A2CA /* contractTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533F21F8F3F4E00C1A2CA /* contractTemplate.pdf */; };
+		4C2533F61F8F530700C1A2CA /* FSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533F51F8F530700C1A2CA /* FSHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		4C2533EF1F8F393400C1A2CA /* ContractsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractsTableViewController.h; sourceTree = "<group>"; };
 		4C2533F01F8F393400C1A2CA /* ContractsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContractsTableViewController.m; sourceTree = "<group>"; };
 		4C2533F21F8F3F4E00C1A2CA /* contractTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = contractTemplate.pdf; sourceTree = "<group>"; };
+		4C2533F41F8F530700C1A2CA /* FSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSHelper.h; sourceTree = "<group>"; };
+		4C2533F51F8F530700C1A2CA /* FSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				4C2533E81F8F37A400C1A2CA /* main.m */,
 				4C2533EF1F8F393400C1A2CA /* ContractsTableViewController.h */,
 				4C2533F01F8F393400C1A2CA /* ContractsTableViewController.m */,
+				4C2533F41F8F530700C1A2CA /* FSHelper.h */,
+				4C2533F51F8F530700C1A2CA /* FSHelper.m */,
 			);
 			path = PDFViewer;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				4C2533DE1F8F37A400C1A2CA /* DocumentViewController.m in Sources */,
 				4C2533F11F8F393400C1A2CA /* ContractsTableViewController.m in Sources */,
 				4C2533E91F8F37A400C1A2CA /* main.m in Sources */,
+				4C2533F61F8F530700C1A2CA /* FSHelper.m in Sources */,
 				4C2533DB1F8F37A400C1A2CA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
