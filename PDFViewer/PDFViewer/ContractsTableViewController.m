@@ -8,7 +8,7 @@
 
 #import "ContractsTableViewController.h"
 #import "DocumentViewController.h"
-@interface ContractsTableViewController ()
+@interface ContractsTableViewController ()<DocumentViewControllerDelegate>
 @property NSArray * documents;
 
 @end
@@ -147,5 +147,10 @@
         
     }
 }
+
+- (void)didSaveDocument {
+    [self loadDocuments];
+}
+
 
 @end
