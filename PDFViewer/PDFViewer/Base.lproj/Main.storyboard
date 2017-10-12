@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vN2-QD-vhW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PDFCell" id="vN2-QD-vhW">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vN2-QD-vhW" id="BhN-A9-1Fo">
@@ -26,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="4dU-Bb-6tJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="CurrentContractSegue" id="4dU-Bb-6tJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="Aly-2p-HaX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jD0-je-JZS">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="04v-z3-yQC"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="NewContractSegue" id="04v-z3-yQC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,6 +82,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="04v-z3-yQC"/>
+        <segue reference="4dU-Bb-6tJ"/>
     </inferredMetricsTieBreakers>
 </document>

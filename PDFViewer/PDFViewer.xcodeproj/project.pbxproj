@@ -29,6 +29,7 @@
 		4C2533E81F8F37A400C1A2CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C2533EF1F8F393400C1A2CA /* ContractsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractsTableViewController.h; sourceTree = "<group>"; };
 		4C2533F01F8F393400C1A2CA /* ContractsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContractsTableViewController.m; sourceTree = "<group>"; };
+		4C2533F21F8F3F4E00C1A2CA /* contractTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = contractTemplate.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 		4C2533D81F8F37A400C1A2CA /* PDFViewer */ = {
 			isa = PBXGroup;
 			children = (
+				4C2533F21F8F3F4E00C1A2CA /* contractTemplate.pdf */,
 				4C2533D91F8F37A400C1A2CA /* AppDelegate.h */,
 				4C2533DA1F8F37A400C1A2CA /* AppDelegate.m */,
 				4C2533DC1F8F37A400C1A2CA /* DocumentViewController.h */,
