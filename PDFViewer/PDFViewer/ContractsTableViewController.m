@@ -127,13 +127,23 @@
     if ([segue.identifier isEqualToString:@"NewContractSegue"]) {
         DocumentViewController * vc = segue.destinationViewController;
         NSString * pdfPath = [[NSBundle mainBundle] pathForResource: @"contractTemplate" ofType: @"pdf"];
-//        vc.document = [[PDFDocument new] initWithURL:[NSURL fileURLWithPath:pdfPath]];
-//        vc.title = @"New Contract";
-//        vc.addAnnotations = YES;
-//        vc.delegate = self;
+        vc.document = [[PDFDocument new] initWithURL:[NSURL fileURLWithPath:pdfPath]];
+        vc.title = @"New Contract";
+        vc.addAnnotations = YES;
+        vc.delegate = self;
         
     }
     if ([segue.identifier isEqualToString:@"CurrentContractSegue"]) {
+        DocumentViewController * vc = segue.destinationViewController;
+        NSString * document = self.documents[[self.tableView indexPathForCell:(UITableViewCell *)sender].row];
+        vc.addAnnotations = NO;
+        vc.title = document;
+        
+        NSURL * url = [[NSURL fileURLWithPath:[self contractsDirectory]] URLByAppendingPathComponent:document];
+        NSData * data = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@", url.path]];
+        
+        vc.document = [[PDFDocument alloc] initWithData:data];
+        vc.delegate = self;
         
     }
 }

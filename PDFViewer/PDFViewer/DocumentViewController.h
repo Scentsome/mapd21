@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@import PDFKit;
+@protocol DocumentViewControllerDelegate
+-(void)didSaveDocument;
+@end
+
 
 @interface DocumentViewController : UIViewController
-
+@property PDFDocument * document;
+@property BOOL addAnnotations;
+@property (weak, nonatomic) id <DocumentViewControllerDelegate> delegate;
 
 @end
 
