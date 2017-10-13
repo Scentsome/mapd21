@@ -16,13 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%@",self.childViewControllers);
    
 }
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    UIViewController * pinkVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PinkVC"];
-    [self presentViewController:pinkVC animated:YES completion:nil];
+//    UIViewController * pinkVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PinkVC"];
+//    [self presentViewController:pinkVC animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,7 +42,12 @@
 -(IBAction)  home:(UIStoryboardSegue *)sender{
     
 }
--(NSUInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskLandscape;
+- (IBAction)changeDate:(UIDatePicker *)sender {
+    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+
+    NSDate * date = sender.date;
+    [formatter setDateFormat:@"YYYY-MM-dd"];
+    NSLog(@"%@",[formatter stringFromDate:date]);
 }
+
 @end

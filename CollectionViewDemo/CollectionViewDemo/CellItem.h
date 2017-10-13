@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface CellItem : NSObject
-
+@property NSString * name;
+@property BOOL selected;
 @end

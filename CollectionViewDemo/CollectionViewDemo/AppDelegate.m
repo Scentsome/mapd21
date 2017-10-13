@@ -16,7 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+    
+    NSDate * date = [NSDate date];
+    
+    [formatter setDateFormat:@"YYYY-MM-dd hh mm ss a "];
+    NSLog(@"%@",[formatter stringFromDate:date]);
     return YES;
 }
 

@@ -13,6 +13,7 @@
 		4C3D76B21F9098A5008C79D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3D76B11F9098A5008C79D7 /* Assets.xcassets */; };
 		4C3D76B51F9098A5008C79D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3D76B31F9098A5008C79D7 /* LaunchScreen.storyboard */; };
 		4C3D76B81F9098A5008C79D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D76B71F9098A5008C79D7 /* main.m */; };
+		4C3D76C01F909CC9008C79D7 /* CellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D76BF1F909CC9008C79D7 /* CellItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4C3D76B41F9098A5008C79D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3D76B61F9098A5008C79D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C3D76B71F9098A5008C79D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C3D76BE1F909CC9008C79D7 /* CellItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellItem.h; sourceTree = "<group>"; };
+		4C3D76BF1F909CC9008C79D7 /* CellItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				4C3D76B31F9098A5008C79D7 /* LaunchScreen.storyboard */,
 				4C3D76B61F9098A5008C79D7 /* Info.plist */,
 				4C3D76B71F9098A5008C79D7 /* main.m */,
+				4C3D76BE1F909CC9008C79D7 /* CellItem.h */,
+				4C3D76BF1F909CC9008C79D7 /* CellItem.m */,
 			);
 			path = CollectionViewDemo;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3D76C01F909CC9008C79D7 /* CellItem.m in Sources */,
 				4C3D76AD1F9098A5008C79D7 /* ViewController.m in Sources */,
 				4C3D76B81F9098A5008C79D7 /* main.m in Sources */,
 				4C3D76AA1F9098A5008C79D7 /* AppDelegate.m in Sources */,
