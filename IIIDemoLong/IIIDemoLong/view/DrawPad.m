@@ -20,6 +20,16 @@
     CGContextFillRect(context, rectangle);
     CGContextStrokeRect(context, rectangle);
 }
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    NSLog(@"touched in view");
+//}
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touch moved");
+}
+
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touch ended");
+}
 
 
 @end

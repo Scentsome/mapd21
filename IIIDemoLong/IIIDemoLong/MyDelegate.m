@@ -26,4 +26,6 @@
 -(void)applicationDidEnterBackground:(UIApplication *)application{
     NSLog(@"enter back ground");
 }
+
+
 @end

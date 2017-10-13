@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  IIIDemoLong
+//  FetchModeDemo
 //
-//  Created by Michael on 11/10/2017.
+//  Created by Michael on 13/10/2017.
 //  Copyright © 2017 Zencher. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "Car.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,9 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    Car * car = [Car new];
-    car.price = 345;
-    NSLog(@"%d",car.price);
+    // Override point for customization after application launch.
     return YES;
 }
 
@@ -30,30 +28,8 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    UIApplication*    app = [UIApplication sharedApplication];
-    
-    __block UIBackgroundTaskIdentifier bgTask ;
-    bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
-        
-        [app endBackgroundTask:bgTask];
-        bgTask = UIBackgroundTaskInvalid;
-        
-    }];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        while (YES) {
-            [NSThread sleepForTimeInterval:1];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                NSLog(@"Time remaining: %f",[app backgroundTimeRemaining]);
-            });
-            
-        }
-        
-        [app endBackgroundTask:bgTask];
-        bgTask = UIBackgroundTaskInvalid;
-        
-    });
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 
@@ -69,10 +45,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"touched in app delegate");
 }
 
 

@@ -43,6 +43,7 @@
 		4C2533F71F8F603400C1A2CA /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
 		4C2533F91F8F618100C1A2CA /* GrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrayViewController.h; sourceTree = "<group>"; };
 		4C2533FA1F8F618100C1A2CA /* GrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrayViewController.m; sourceTree = "<group>"; };
+		4C3D76791F9052D3008C79D7 /* babe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = babe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		4C2518E41F8DAEC2002FA8DE /* IIIDemoLong */ = {
 			isa = PBXGroup;
 			children = (
+				4C3D76791F9052D3008C79D7 /* babe.png */,
 				4C1D46651F8DF22D00325861 /* model */,
 				4C1D46641F8DF21800325861 /* view */,
 				4C2518E51F8DAEC2002FA8DE /* AppDelegate.h */,
@@ -147,6 +149,11 @@
 					4C2518E11F8DAEC2002FA8DE = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

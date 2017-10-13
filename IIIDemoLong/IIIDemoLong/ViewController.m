@@ -7,17 +7,34 @@
 //
 
 #import "ViewController.h"
+#import "DrawPad.h"
+
+#define BLUEVIEW 22
 
 @interface ViewController ()<UIImagePickerControllerDelegate>
+@property (weak, nonatomic) IBOutlet DrawPad *grayView;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
+@property (weak, nonatomic) IBOutlet UITextField *inputField;
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+//    UIView * blueView ;
+}
 
+- (IBAction)showPink:(id)sender {
+}
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.inputField becomeFirstResponder];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+//    self.grayView.frame = CGRectMake(100, 200, 30, 30);
+    
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 //    NSMutableArray<NSString *> * cars = [@[] mutableCopy];
 //
@@ -50,6 +67,15 @@
 //    NSLog(@"%@",view);
     
     [self.myButton addTarget:self action:@selector(hello:event:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        NSLog(@"did enter background");
+        
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardDidShowNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        NSLog(@"%@",note);
+    }];
 }
 -(void) hello{
     NSLog(@"hello");
@@ -84,6 +110,51 @@
     
     NSLog(@"Swipe");
 }
+- (IBAction)addView:(id)sender {
+    
+    UIView * blueView = [UIView new];
+    blueView.tag = BLUEVIEW;
+    blueView.frame = CGRectMake(50, 50, 100, 30);
+    
+    blueView.backgroundColor = UIColor.blueColor;
+    
+    [self.view addSubview:blueView];
+}
+- (IBAction)removeView:(id)sender {
+//    [blueView removeFromSuperview];
+    UIView * blueView = [self.view viewWithTag:BLUEVIEW];
+    
+    [blueView removeFromSuperview];
+}
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    NSLog(@"touched in view controller");
+//}
+- (IBAction)moveView:(id)sender {
+    
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        self.grayView.center = CGPointMake(50,50);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1.0 animations:^{
+            self.grayView.center = CGPointMake(100,100);
+        }];
+        
+    }];
+    
+}
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    
+    NSLog(@"change orientation");
+    if(size.height > size.width){
+        NSLog(@"Vertical");
+    }else {
+        NSLog(@"Landscape");
+    }
+}
+
+//-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+//    return UIInterfaceOrientationMaskLandscape;
+//}
 
 @end

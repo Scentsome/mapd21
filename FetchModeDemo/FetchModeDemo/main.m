@@ -1,14 +1,13 @@
 //
 //  main.m
-//  IIIDemoLong
+//  FetchModeDemo
 //
-//  Created by Michael on 11/10/2017.
+//  Created by Michael on 13/10/2017.
 //  Copyright © 2017 Zencher. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "MyDelegate.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
