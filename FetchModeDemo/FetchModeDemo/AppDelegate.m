@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -28,8 +28,27 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    UIApplication*    app = [UIApplication sharedApplication];
+    
+    __block UIBackgroundTaskIdentifier bgTask ;
+    bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
+        
+        [app endBackgroundTask:bgTask];
+        bgTask = UIBackgroundTaskInvalid;
+        
+    }];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        while (YES) {
+            [NSThread sleepForTimeInterval:1];
+            NSLog(@"Time remaining: %f",[app backgroundTimeRemaining]);
+        }
+        
+        [app endBackgroundTask:bgTask];
+        bgTask = UIBackgroundTaskInvalid;
+        
+    });
 }
 
 
@@ -45,6 +64,14 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+-(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+   
+    [[NSNotificationCenter defaultCenter ] postNotificationName:@"ZenNotification" object:self];
+    NSLog(@"%@========",self.window.rootViewController);
+    ViewController * vc = self.window.rootViewController;
+    
+    [vc performFetchHandler:completionHandler];
 }
 
 
