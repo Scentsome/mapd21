@@ -17,6 +17,8 @@
 		4C2518F21F8DAEC2002FA8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2518F01F8DAEC2002FA8DE /* LaunchScreen.storyboard */; };
 		4C2518F51F8DAEC2002FA8DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2518F41F8DAEC2002FA8DE /* main.m */; };
 		4C2533C31F8F15A800C1A2CA /* DrawPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533C21F8F15A800C1A2CA /* DrawPad.m */; };
+		4C2533F81F8F603400C1A2CA /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2533F71F8F603400C1A2CA /* SecondStoryboard.storyboard */; };
+		4C2533FB1F8F618100C1A2CA /* GrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2533FA1F8F618100C1A2CA /* GrayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		4C2518F41F8DAEC2002FA8DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C2533C11F8F15A800C1A2CA /* DrawPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawPad.h; sourceTree = "<group>"; };
 		4C2533C21F8F15A800C1A2CA /* DrawPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPad.m; sourceTree = "<group>"; };
+		4C2533F71F8F603400C1A2CA /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
+		4C2533F91F8F618100C1A2CA /* GrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrayViewController.h; sourceTree = "<group>"; };
+		4C2533FA1F8F618100C1A2CA /* GrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,8 @@
 		4C2518D91F8DAEC2002FA8DE = {
 			isa = PBXGroup;
 			children = (
+				4C2533F91F8F618100C1A2CA /* GrayViewController.h */,
+				4C2533FA1F8F618100C1A2CA /* GrayViewController.m */,
 				4C2518E41F8DAEC2002FA8DE /* IIIDemoLong */,
 				4C2518E31F8DAEC2002FA8DE /* Products */,
 			);
@@ -103,6 +110,7 @@
 				4C1D465F1F8DE63A00325861 /* Car.m */,
 				4C1D46611F8DEC6B00325861 /* MyDelegate.h */,
 				4C1D46621F8DEC6B00325861 /* MyDelegate.m */,
+				4C2533F71F8F603400C1A2CA /* SecondStoryboard.storyboard */,
 			);
 			path = IIIDemoLong;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				4C2518F21F8DAEC2002FA8DE /* LaunchScreen.storyboard in Resources */,
 				4C2518EF1F8DAEC2002FA8DE /* Assets.xcassets in Resources */,
 				4C2518ED1F8DAEC2002FA8DE /* Main.storyboard in Resources */,
+				4C2533F81F8F603400C1A2CA /* SecondStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1D46681F8DFA0400325861 /* MyLabel.m in Sources */,
+				4C2533FB1F8F618100C1A2CA /* GrayViewController.m in Sources */,
 				4C2518EA1F8DAEC2002FA8DE /* ViewController.m in Sources */,
 				4C2518F51F8DAEC2002FA8DE /* main.m in Sources */,
 				4C1D46601F8DE63A00325861 /* Car.m in Sources */,

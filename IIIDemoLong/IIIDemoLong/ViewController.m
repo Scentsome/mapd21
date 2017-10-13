@@ -61,6 +61,12 @@
 
 -(void) hello:(UIButton *) sender  event:(UIEvent *) event{
     NSLog(@"hello sender event");
+    
+    UIStoryboard * story = [UIStoryboard storyboardWithName:@"SecondStoryboard" bundle:nil];
+    
+    UIViewController * initVC = [story instantiateInitialViewController];
+    
+    [self presentViewController:initVC animated:YES completion:nil];
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     NSLog(@"%@",info);
