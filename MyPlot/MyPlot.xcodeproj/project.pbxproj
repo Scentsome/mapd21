@@ -13,7 +13,33 @@
 		4CF046E81F947FD800A4527D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF046E71F947FD800A4527D /* Assets.xcassets */; };
 		4CF046EB1F947FD800A4527D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF046E91F947FD800A4527D /* LaunchScreen.storyboard */; };
 		4CF046EE1F947FD800A4527D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF046ED1F947FD800A4527D /* main.m */; };
+		4CF0470B1F94817700A4527D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF047081F94815600A4527D /* Charts.framework */; };
+		4CF0470C1F94817700A4527D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF047081F94815600A4527D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CF047071F94815600A4527D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CF047021F94815500A4527D /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		4CF047091F94815600A4527D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CF047021F94815500A4527D /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		4CF0470D1F94817700A4527D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CF047021F94815500A4527D /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4CF047011F94804100A4527D /* Embed Frameworks */ = {
@@ -22,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4CF0470C1F94817700A4527D /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +66,7 @@
 		4CF046EA1F947FD800A4527D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF046EC1F947FD800A4527D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF046ED1F947FD800A4527D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CF047021F94815500A4527D /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF0470B1F94817700A4527D /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +100,7 @@
 		4CF046DD1F947FD800A4527D /* MyPlot */ = {
 			isa = PBXGroup;
 			children = (
+				4CF047021F94815500A4527D /* Charts.xcodeproj */,
 				4CF046DE1F947FD800A4527D /* AppDelegate.h */,
 				4CF046DF1F947FD800A4527D /* AppDelegate.m */,
 				4CF046E11F947FD800A4527D /* ViewController.h */,
@@ -82,6 +112,15 @@
 				4CF046ED1F947FD800A4527D /* main.m */,
 			);
 			path = MyPlot;
+			sourceTree = "<group>";
+		};
+		4CF047031F94815500A4527D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CF047081F94815600A4527D /* Charts.framework */,
+				4CF0470A1F94815600A4527D /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +138,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4CF0470E1F94817700A4527D /* PBXTargetDependency */,
 			);
 			name = MyPlot;
 			productName = MyPlot;
@@ -131,12 +171,35 @@
 			mainGroup = 4CF046D21F947FD800A4527D;
 			productRefGroup = 4CF046DC1F947FD800A4527D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4CF047031F94815500A4527D /* Products */;
+					ProjectRef = 4CF047021F94815500A4527D /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4CF046DA1F947FD800A4527D /* MyPlot */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4CF047081F94815600A4527D /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 4CF047071F94815600A4527D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CF0470A1F94815600A4527D /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 4CF047091F94815600A4527D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4CF046D91F947FD800A4527D /* Resources */ = {
@@ -163,6 +226,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CF0470E1F94817700A4527D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 4CF0470D1F94817700A4527D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4CF046E41F947FD800A4527D /* Main.storyboard */ = {
