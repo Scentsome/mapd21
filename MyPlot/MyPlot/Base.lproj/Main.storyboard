@@ -17,15 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0RT-tQ-fUS" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="129" width="343" height="387"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0RT-tQ-fUS" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="7.5" y="153.5" width="360" height="360"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="RFa-6o-S8J"/>
+                                    <constraint firstAttribute="width" constant="360" id="fnZ-qW-0xP"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvr-YX-hna">
+                                <rect key="frame" x="34" y="59" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Default"/>
+                                <connections>
+                                    <action selector="highlight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Uw-vw-wzW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0RT-tQ-fUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qjh-2g-a0d"/>
+                            <constraint firstItem="0RT-tQ-fUS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mrP-Dh-F13"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="0RT-tQ-fUS" id="fLz-Ez-n6w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
