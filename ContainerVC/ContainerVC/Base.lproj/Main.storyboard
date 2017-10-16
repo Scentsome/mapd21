@@ -30,8 +30,14 @@
                                     <action selector="changeVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2l-8s-t4I"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNw-Je-cQ8">
+                                <rect key="frame" x="67" y="20" width="228" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.49736175259999998" blue="0.817221588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="C3U-Ma-Vvu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="7ik-EK-KPh"/>
                             <constraint firstItem="C3U-Ma-Vvu" firstAttribute="top" secondItem="z4B-CV-k3G" secondAttribute="bottom" constant="53" id="Ewo-Wu-vNB"/>
@@ -41,9 +47,38 @@
                             <constraint firstItem="z4B-CV-k3G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="ehM-8m-b0Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Qr4-aN-sFw" appends="YES" id="tKJ-xN-Y44"/>
+                            <outletCollection property="gestureRecognizers" destination="ALj-Ub-wv8" appends="YES" id="YhK-YK-nWq"/>
+                            <outletCollection property="gestureRecognizers" destination="Jvp-3x-ocS" appends="YES" id="ikh-X5-3qe"/>
+                            <outletCollection property="gestureRecognizers" destination="je9-Tb-boB" appends="YES" id="MSi-5J-CBa"/>
+                            <outletCollection property="gestureRecognizers" destination="TFH-L0-a0l" appends="YES" id="PhG-Pr-CNt"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTouchesRequired="2" id="Qr4-aN-sFw">
+                    <connections>
+                        <action selector="tapHandler:" destination="BYZ-38-t0r" id="ZyV-tX-Dss"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ALj-Ub-wv8"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="1" id="Jvp-3x-ocS">
+                    <connections>
+                        <action selector="longPress:" destination="BYZ-38-t0r" id="9tZ-ei-Lm6"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="je9-Tb-boB">
+                    <connections>
+                        <action selector="swipeToUp:" destination="BYZ-38-t0r" id="z6M-uL-xJb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="TFH-L0-a0l">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="edgeHandler:" destination="BYZ-38-t0r" id="sh0-xD-eIe"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>

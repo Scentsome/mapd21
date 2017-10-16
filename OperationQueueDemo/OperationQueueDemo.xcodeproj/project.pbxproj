@@ -13,6 +13,7 @@
 		4CF7ABCA1F910452004E2191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC91F910452004E2191 /* Assets.xcassets */; };
 		4CF7ABCD1F910452004E2191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF7ABCB1F910452004E2191 /* LaunchScreen.storyboard */; };
 		4CF7ABD01F910452004E2191 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABCF1F910452004E2191 /* main.m */; };
+		4CF7ABD71F911489004E2191 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF7ABD61F911484004E2191 /* loading.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4CF7ABCC1F910452004E2191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF7ABCE1F910452004E2191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF7ABCF1F910452004E2191 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CF7ABD61F911484004E2191 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		4CF7ABBF1F910452004E2191 /* OperationQueueDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4CF7ABD61F911484004E2191 /* loading.png */,
 				4CF7ABC01F910452004E2191 /* AppDelegate.h */,
 				4CF7ABC11F910452004E2191 /* AppDelegate.m */,
 				4CF7ABC31F910452004E2191 /* ViewController.h */,
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF7ABD71F911489004E2191 /* loading.png in Resources */,
 				4CF7ABCD1F910452004E2191 /* LaunchScreen.storyboard in Resources */,
 				4CF7ABCA1F910452004E2191 /* Assets.xcassets in Resources */,
 				4CF7ABC81F910452004E2191 /* Main.storyboard in Resources */,
