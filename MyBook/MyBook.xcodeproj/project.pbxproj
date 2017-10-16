@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C8DDA501F94582E00C09967 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DDA4F1F94582E00C09967 /* Car.m */; };
 		4CF7ABE61F9448FF004E2191 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABE51F9448FF004E2191 /* AppDelegate.m */; };
 		4CF7ABE91F9448FF004E2191 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABE81F9448FF004E2191 /* RootViewController.m */; };
 		4CF7ABEC1F9448FF004E2191 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABEB1F9448FF004E2191 /* DataViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C8DDA4E1F94582E00C09967 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		4C8DDA4F1F94582E00C09967 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		4CF7ABE11F9448FF004E2191 /* MyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF7ABE41F9448FF004E2191 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CF7ABE51F9448FF004E2191 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				4CF7ABF51F9448FF004E2191 /* LaunchScreen.storyboard */,
 				4CF7ABF81F9448FF004E2191 /* Info.plist */,
 				4CF7ABF91F9448FF004E2191 /* main.m */,
+				4C8DDA4E1F94582E00C09967 /* Car.h */,
+				4C8DDA4F1F94582E00C09967 /* Car.m */,
 			);
 			path = MyBook;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8DDA501F94582E00C09967 /* Car.m in Sources */,
 				4CF7ABFA1F9448FF004E2191 /* main.m in Sources */,
 				4CF7ABE91F9448FF004E2191 /* RootViewController.m in Sources */,
 				4CF7ABEF1F9448FF004E2191 /* ModelController.m in Sources */,

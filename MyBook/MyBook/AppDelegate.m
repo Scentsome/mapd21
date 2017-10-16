@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Car.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,33 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    Car * car1 = [Car new];
+    Car * car2 = [Car new];
+    Car * car3 = [Car new];
+    car1.name = @"Toyota";
+    car1.price = @500;
+    
+    car2.name = @"BMW";
+    car2.price = @188;
+    
+    
+    car3.name = @"Benz";
+    car3.price = @900;
+    NSArray * cars = @[car1,car2, car3];
+    
+    
+    Car * carN = [Car new];
+    carN.name = [[NSString alloc] initWithFormat:@"BMW"];
+    carN.price = @188;
+    
+//    [cars[0] isEqual:carN];
+    if([cars indexOfObject:carN] == NSNotFound){
+        NSLog(@"Not found");
+    }else {
+        NSLog(@"Found");
+    }
+    
+//    NSLog(@"%lu", (unsigned long));
     return YES;
 }
 

@@ -10,7 +10,7 @@
 #import "ModelController.h"
 #import "DataViewController.h"
 
-@interface RootViewController ()
+@interface RootViewController ()<UIPageViewControllerDataSource>
 
 @property (readonly, strong, nonatomic) ModelController *modelController;
 @end
@@ -92,6 +92,14 @@
 
 
     return UIPageViewControllerSpineLocationMid;
+}
+
+-(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
+    return [self.storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
+}
+
+-(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
+    return [self.storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
 }
 
 

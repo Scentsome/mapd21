@@ -31,7 +31,7 @@
     self.dataLabel.text = [self.dataObject description];
 }
 
--(void) dealloc {
-    NSLog(@"destory data view controller");
-}
+//-(void) dealloc {
+//    NSLog(@"destory data view controller");
+//}
 @end
