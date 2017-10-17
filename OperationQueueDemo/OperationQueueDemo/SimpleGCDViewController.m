@@ -17,6 +17,18 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [DataProvider sharedInstance].names.count;
 }
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
+    
+    cell.textLabel.text = @"Default";
+    cell.imageView.image = [UIImage imageNamed:@"loading"];
+    NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[DataProvider sharedInstance].photos[indexPath.row]]];
+    cell.textLabel.text = [DataProvider sharedInstance].names[indexPath.row] ;
+    UIImage * image = [UIImage imageWithData:data];
+    cell.imageView.image = image;
+    return cell;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
