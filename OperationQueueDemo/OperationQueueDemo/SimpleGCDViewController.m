@@ -7,13 +7,16 @@
 //
 
 #import "SimpleGCDViewController.h"
-
-@interface SimpleGCDViewController ()
+#import "DataProvider.h"
+@interface SimpleGCDViewController ()<UITableViewDataSource>
 
 @end
 
 @implementation SimpleGCDViewController
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [DataProvider sharedInstance].names.count;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

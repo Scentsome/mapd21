@@ -7,13 +7,16 @@
 //
 
 #import "CodeCellViewController.h"
-
-@interface CodeCellViewController ()
+#import "DataProvider.h"
+@interface CodeCellViewController ()<UITableViewDataSource>
 
 @end
 
 @implementation CodeCellViewController
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [DataProvider sharedInstance].names.count;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

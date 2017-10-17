@@ -7,13 +7,20 @@
 //
 
 #import "StoryCellViewController.h"
-
-@interface StoryCellViewController ()
+#import "DataProvider.h"
+@interface StoryCellViewController ()<UITableViewDataSource>
 
 @end
 
 @implementation StoryCellViewController
-
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [DataProvider sharedInstance].names.count;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
+    
+    return cell;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

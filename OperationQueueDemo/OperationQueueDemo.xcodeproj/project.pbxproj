@@ -10,6 +10,7 @@
 		4C6794A21F964B5E00D231EB /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6794A11F964B5E00D231EB /* DataProvider.m */; };
 		4C6794A51F964FB500D231EB /* CodeCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6794A41F964FB500D231EB /* CodeCellViewController.m */; };
 		4C6794A81F96514600D231EB /* StoryCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6794A71F96514600D231EB /* StoryCellViewController.m */; };
+		4C6794AD1F96543B00D231EB /* SimpleGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6794AC1F96543B00D231EB /* SimpleGCDViewController.m */; };
 		4CF7ABC21F910452004E2191 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC11F910452004E2191 /* AppDelegate.m */; };
 		4CF7ABC51F910452004E2191 /* GCDQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC41F910452004E2191 /* GCDQueueViewController.m */; };
 		4CF7ABC81F910452004E2191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC61F910452004E2191 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		4C6794A41F964FB500D231EB /* CodeCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeCellViewController.m; sourceTree = "<group>"; };
 		4C6794A61F96514600D231EB /* StoryCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryCellViewController.h; sourceTree = "<group>"; };
 		4C6794A71F96514600D231EB /* StoryCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryCellViewController.m; sourceTree = "<group>"; };
+		4C6794AB1F96543B00D231EB /* SimpleGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleGCDViewController.h; sourceTree = "<group>"; };
+		4C6794AC1F96543B00D231EB /* SimpleGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleGCDViewController.m; sourceTree = "<group>"; };
 		4CF7ABBD1F910452004E2191 /* OperationQueueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OperationQueueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF7ABC01F910452004E2191 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CF7ABC11F910452004E2191 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				4C6794A41F964FB500D231EB /* CodeCellViewController.m */,
 				4C6794A61F96514600D231EB /* StoryCellViewController.h */,
 				4C6794A71F96514600D231EB /* StoryCellViewController.m */,
+				4C6794AB1F96543B00D231EB /* SimpleGCDViewController.h */,
+				4C6794AC1F96543B00D231EB /* SimpleGCDViewController.m */,
 			);
 			path = OperationQueueDemo;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				4CF7ABC51F910452004E2191 /* GCDQueueViewController.m in Sources */,
 				4C6794A51F964FB500D231EB /* CodeCellViewController.m in Sources */,
 				4CF7ABD01F910452004E2191 /* main.m in Sources */,
+				4C6794AD1F96543B00D231EB /* SimpleGCDViewController.m in Sources */,
 				4C6794A21F964B5E00D231EB /* DataProvider.m in Sources */,
 				4C6794A81F96514600D231EB /* StoryCellViewController.m in Sources */,
 				4CF7ABC21F910452004E2191 /* AppDelegate.m in Sources */,
