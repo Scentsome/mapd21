@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C6794A21F964B5E00D231EB /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6794A11F964B5E00D231EB /* DataProvider.m */; };
+		4C6794A51F964FB500D231EB /* CodeCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6794A41F964FB500D231EB /* CodeCellViewController.m */; };
+		4C6794A81F96514600D231EB /* StoryCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6794A71F96514600D231EB /* StoryCellViewController.m */; };
 		4CF7ABC21F910452004E2191 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC11F910452004E2191 /* AppDelegate.m */; };
-		4CF7ABC51F910452004E2191 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC41F910452004E2191 /* ViewController.m */; };
+		4CF7ABC51F910452004E2191 /* GCDQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC41F910452004E2191 /* GCDQueueViewController.m */; };
 		4CF7ABC81F910452004E2191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC61F910452004E2191 /* Main.storyboard */; };
 		4CF7ABCA1F910452004E2191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF7ABC91F910452004E2191 /* Assets.xcassets */; };
 		4CF7ABCD1F910452004E2191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF7ABCB1F910452004E2191 /* LaunchScreen.storyboard */; };
@@ -17,11 +20,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C6794A01F964B5E00D231EB /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		4C6794A11F964B5E00D231EB /* DataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+		4C6794A31F964FB500D231EB /* CodeCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeCellViewController.h; sourceTree = "<group>"; };
+		4C6794A41F964FB500D231EB /* CodeCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeCellViewController.m; sourceTree = "<group>"; };
+		4C6794A61F96514600D231EB /* StoryCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryCellViewController.h; sourceTree = "<group>"; };
+		4C6794A71F96514600D231EB /* StoryCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryCellViewController.m; sourceTree = "<group>"; };
 		4CF7ABBD1F910452004E2191 /* OperationQueueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OperationQueueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF7ABC01F910452004E2191 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CF7ABC11F910452004E2191 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CF7ABC31F910452004E2191 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CF7ABC41F910452004E2191 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CF7ABC31F910452004E2191 /* GCDQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDQueueViewController.h; sourceTree = "<group>"; };
+		4CF7ABC41F910452004E2191 /* GCDQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDQueueViewController.m; sourceTree = "<group>"; };
 		4CF7ABC71F910452004E2191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CF7ABC91F910452004E2191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF7ABCC1F910452004E2191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,13 +72,19 @@
 				4CF7ABD61F911484004E2191 /* loading.png */,
 				4CF7ABC01F910452004E2191 /* AppDelegate.h */,
 				4CF7ABC11F910452004E2191 /* AppDelegate.m */,
-				4CF7ABC31F910452004E2191 /* ViewController.h */,
-				4CF7ABC41F910452004E2191 /* ViewController.m */,
+				4CF7ABC31F910452004E2191 /* GCDQueueViewController.h */,
+				4CF7ABC41F910452004E2191 /* GCDQueueViewController.m */,
 				4CF7ABC61F910452004E2191 /* Main.storyboard */,
 				4CF7ABC91F910452004E2191 /* Assets.xcassets */,
 				4CF7ABCB1F910452004E2191 /* LaunchScreen.storyboard */,
 				4CF7ABCE1F910452004E2191 /* Info.plist */,
 				4CF7ABCF1F910452004E2191 /* main.m */,
+				4C6794A01F964B5E00D231EB /* DataProvider.h */,
+				4C6794A11F964B5E00D231EB /* DataProvider.m */,
+				4C6794A31F964FB500D231EB /* CodeCellViewController.h */,
+				4C6794A41F964FB500D231EB /* CodeCellViewController.m */,
+				4C6794A61F96514600D231EB /* StoryCellViewController.h */,
+				4C6794A71F96514600D231EB /* StoryCellViewController.m */,
 			);
 			path = OperationQueueDemo;
 			sourceTree = "<group>";
@@ -146,8 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF7ABC51F910452004E2191 /* ViewController.m in Sources */,
+				4CF7ABC51F910452004E2191 /* GCDQueueViewController.m in Sources */,
+				4C6794A51F964FB500D231EB /* CodeCellViewController.m in Sources */,
 				4CF7ABD01F910452004E2191 /* main.m in Sources */,
+				4C6794A21F964B5E00D231EB /* DataProvider.m in Sources */,
+				4C6794A81F96514600D231EB /* StoryCellViewController.m in Sources */,
 				4CF7ABC21F910452004E2191 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

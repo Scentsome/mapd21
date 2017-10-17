@@ -16,6 +16,7 @@
 		4CF0470B1F94817700A4527D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF047081F94815600A4527D /* Charts.framework */; };
 		4CF0470C1F94817700A4527D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF047081F94815600A4527D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CF047111F948F1600A4527D /* BarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF047101F948F1600A4527D /* BarChartViewController.m */; };
+		4CF047141F94939700A4527D /* LineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF047131F94939700A4527D /* LineChartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		4CF047021F94815500A4527D /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		4CF0470F1F948F1600A4527D /* BarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartViewController.h; sourceTree = "<group>"; };
 		4CF047101F948F1600A4527D /* BarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartViewController.m; sourceTree = "<group>"; };
+		4CF047121F94939700A4527D /* LineChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineChartViewController.h; sourceTree = "<group>"; };
+		4CF047131F94939700A4527D /* LineChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				4CF046ED1F947FD800A4527D /* main.m */,
 				4CF0470F1F948F1600A4527D /* BarChartViewController.h */,
 				4CF047101F948F1600A4527D /* BarChartViewController.m */,
+				4CF047121F94939700A4527D /* LineChartViewController.h */,
+				4CF047131F94939700A4527D /* LineChartViewController.m */,
 			);
 			path = MyPlot;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			files = (
 				4CF046E31F947FD800A4527D /* ViewController.m in Sources */,
 				4CF047111F948F1600A4527D /* BarChartViewController.m in Sources */,
+				4CF047141F94939700A4527D /* LineChartViewController.m in Sources */,
 				4CF046EE1F947FD800A4527D /* main.m in Sources */,
 				4CF046E01F947FD800A4527D /* AppDelegate.m in Sources */,
 			);
