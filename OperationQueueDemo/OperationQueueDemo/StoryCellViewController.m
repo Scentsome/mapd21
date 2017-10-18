@@ -18,7 +18,8 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
-    
+    cell.textLabel.text = [DataProvider sharedInstance].names[indexPath.row];
+
     return cell;
 }
 - (void)viewDidLoad {

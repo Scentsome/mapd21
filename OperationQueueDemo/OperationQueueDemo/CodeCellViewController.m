@@ -24,6 +24,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
     }
     
+    cell.textLabel.text = [DataProvider sharedInstance].names[indexPath.row];
+    
     return cell;
 }
 - (void)viewDidLoad {

@@ -23,10 +23,24 @@
     
     cell.textLabel.text = @"Default";
     cell.imageView.image = [UIImage imageNamed:@"loading"];
-    NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[DataProvider sharedInstance].photos[indexPath.row]]];
-    cell.textLabel.text = [DataProvider sharedInstance].names[indexPath.row] ;
-    UIImage * image = [UIImage imageWithData:data];
-    cell.imageView.image = image;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:[DataProvider sharedInstance].photos[indexPath.row]]];
+        UIImage * image = [UIImage imageWithData:data];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            UITableViewCell * currentCell = [tableView cellForRowAtIndexPath:indexPath];
+            currentCell.imageView.image = image;
+            
+            currentCell.textLabel.text = [DataProvider sharedInstance].names[indexPath.row] ;
+                       });
+        
+        
+    });
+    
+
     return cell;
 }
 - (void)viewDidLoad {
