@@ -33,11 +33,11 @@
     self.channels = [@[] mutableCopy];
     channelRef = [[[FIRDatabase database] reference] child:@"channels"];
     
-
+    [self observeChannels];
 }
 
 -(void) viewWillAppear:(BOOL)animated{
-    [self observeChannels];
+    
 }
 - (IBAction)createChannel:(id)sender {
     
