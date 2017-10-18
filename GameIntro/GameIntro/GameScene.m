@@ -42,6 +42,20 @@
     return CGPointMake((point.x / scalar), (point.y / scalar));
 }
 
+-(CGFloat) sqrt:(CGFloat) a{
+    return (CGFloat) sqrtf((float) a);
+}
+
+-(CGFloat) length:(CGPoint) point{
+    return sqrt(point.x * point.x + point.y * point.y);
+}
+
+-(CGPoint) normalized:(CGPoint) point{
+    CGFloat pointLength = [self length:point];
+    CGPoint newPoint = CGPointMake(point.x/pointLength, point.y/pointLength);
+    return newPoint;
+}
+
 - (void)didMoveToView:(SKView *)view {
     self.backgroundColor = [SKColor whiteColor];
     
