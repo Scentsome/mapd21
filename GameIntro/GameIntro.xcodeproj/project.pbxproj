@@ -17,6 +17,9 @@
 		4CE5503F1F96E85000C2B457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5503D1F96E85000C2B457 /* LaunchScreen.storyboard */; };
 		4CE550421F96E85000C2B457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550411F96E85000C2B457 /* main.m */; };
 		4CE550491F96EF7300C2B457 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE550481F96EF6F00C2B457 /* loading.png */; };
+		4CE5504F1F96F68500C2B457 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5504E1F96F65100C2B457 /* sprites.atlas */; };
+		4CE550501F96F68800C2B457 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5504C1F96F65100C2B457 /* background-music-aac.caf */; };
+		4CE550511F96F68A00C2B457 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5504D1F96F65100C2B457 /* pew-pew-lei.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,12 +168,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE550501F96F68800C2B457 /* background-music-aac.caf in Resources */,
+				4CE5504F1F96F68500C2B457 /* sprites.atlas in Resources */,
 				4CE550491F96EF7300C2B457 /* loading.png in Resources */,
 				4CE5503A1F96E85000C2B457 /* Main.storyboard in Resources */,
 				4CE5502F1F96E85000C2B457 /* GameScene.sks in Resources */,
 				4CE5503C1F96E85000C2B457 /* Assets.xcassets in Resources */,
 				4CE5503F1F96E85000C2B457 /* LaunchScreen.storyboard in Resources */,
 				4CE550311F96E85000C2B457 /* Actions.sks in Resources */,
+				4CE550511F96F68A00C2B457 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
