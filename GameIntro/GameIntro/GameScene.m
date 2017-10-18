@@ -7,7 +7,10 @@
 //
 
 #import "GameScene.h"
-
+#define none            0
+#define allObject       UINT32_MAX
+#define theMonster      0b1
+#define theProjectile   0b10
 @interface GameScene()
 @property (nonatomic) SKSpriteNode * player;
 
@@ -126,7 +129,7 @@
 
 
 -(void)update:(CFTimeInterval)currentTime {
-    // Called before each frame is rendered
+    NSLog(@"%d",currentTime);
 }
 
 @end
