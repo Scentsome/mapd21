@@ -7,13 +7,14 @@
 //
 
 #import "ChannelListViewController.h"
+#import "ChatViewController.h"
 @import FirebaseAuth;
 @import FirebaseDatabase;
 
 
 @interface ChannelListViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITextField *addChannelTextField;
-@property NSMutableArray<NSString *> * channels;
+@property NSMutableArray<NSDictionary *> * channels;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
@@ -76,7 +77,8 @@
         
     }
     
-    cell.textLabel.text = self.channels[indexPath.row];
+    NSDictionary * channel = self.channels[indexPath.row];
+    cell.textLabel.text = channel[@"name"];
     return cell;
 }
 
@@ -92,7 +94,7 @@
         if (name != nil) {
             if (![name isEqualToString:@""]) {
                
-                [self.channels addObject:name];
+                [self.channels addObject:@{@"name":name,@"id":mKey}];
                 [self.tableView reloadData];
             } else {
                 NSLog(@"Error");
@@ -101,6 +103,19 @@
             NSLog(@"Error");
         }
     }];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ChatViewController * chatVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ChatVC"];
+    
+    
+    NSDictionary * channel = self.channels[indexPath.row];
+    chatVC.channelRef = [channelRef child:channel[@"id"]];
+    chatVC.senderDisplayName = channel[@"name"];
+    
+    [self.navigationController pushViewController:chatVC animated:YES];
+    
 }
 
 @end

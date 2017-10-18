@@ -74,7 +74,6 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="createChannel:" destination="xKz-cx-tdA" eventType="touchUpInside" id="7ha-P9-evE"/>
-                                    <segue destination="VaF-cL-Jvc" kind="show" id="Thg-gZ-gw7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1040.8" y="197.45127436281859"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="7pV-Ty-eTJ">
             <objects>
-                <viewController id="VaF-cL-Jvc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatVC" id="VaF-cL-Jvc" customClass="ChatViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jze-KP-nCe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,6 +15,7 @@
 		4CE550711F9730C600C2B457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550701F9730C600C2B457 /* main.m */; };
 		4CE550781F97367000C2B457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CE550771F97314B00C2B457 /* GoogleService-Info.plist */; };
 		4CE5507B1F97388000C2B457 /* ChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5507A1F97388000C2B457 /* ChannelListViewController.m */; };
+		4CE5507E1F97418D00C2B457 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5507D1F97418D00C2B457 /* ChatViewController.m */; };
 		5E900DF863B44D574075CA46 /* Pods_FireChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0838C90FB98EB702187DF4C2 /* Pods_FireChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		4CE550771F97314B00C2B457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CE550791F97388000C2B457 /* ChannelListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelListViewController.h; sourceTree = "<group>"; };
 		4CE5507A1F97388000C2B457 /* ChannelListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelListViewController.m; sourceTree = "<group>"; };
+		4CE5507C1F97418D00C2B457 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		4CE5507D1F97418D00C2B457 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		578A05E94627D6E0795905D9 /* Pods-FireChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireChat/Pods-FireChat.release.xcconfig"; sourceTree = "<group>"; };
 		E42F19F52B41A3A61E8FCE7A /* Pods-FireChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireChat/Pods-FireChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,8 @@
 				4CE550701F9730C600C2B457 /* main.m */,
 				4CE550791F97388000C2B457 /* ChannelListViewController.h */,
 				4CE5507A1F97388000C2B457 /* ChannelListViewController.m */,
+				4CE5507C1F97418D00C2B457 /* ChatViewController.h */,
+				4CE5507D1F97418D00C2B457 /* ChatViewController.m */,
 			);
 			path = FireChat;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			files = (
 				4CE550661F9730C600C2B457 /* ViewController.m in Sources */,
 				4CE550711F9730C600C2B457 /* main.m in Sources */,
+				4CE5507E1F97418D00C2B457 /* ChatViewController.m in Sources */,
 				4CE5507B1F97388000C2B457 /* ChannelListViewController.m in Sources */,
 				4CE550631F9730C600C2B457 /* AppDelegate.m in Sources */,
 			);
