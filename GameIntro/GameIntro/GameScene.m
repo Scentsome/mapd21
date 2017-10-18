@@ -98,6 +98,31 @@
 }
 
 
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = (UITouch*)[touches anyObject];
+    CGPoint touchLocation = [touch locationInNode:self];
+    
+    SKSpriteNode * projectile = [[SKSpriteNode alloc] initWithImageNamed:@"projectile"];
+    projectile.position = self.player.position;
+    
+    CGPoint offset = CGPointMake(touchLocation.x - projectile.position.x, touchLocation.y - projectile.position.y);
+    
+    if (offset.x < 0) {
+        return ;
+    }
+    
+    [self addChild:projectile];
+    
+    CGPoint direction = [self normalized:offset];
+    CGPoint shootAmount = CGPointMake(direction.x * 1000, direction.y *1000);
+    CGPoint realDest = CGPointMake(shootAmount.x + projectile.position.x, shootAmount.y + projectile.position.y);
+    
+    SKAction * actionMove = [SKAction moveTo:realDest duration:2.0];
+    SKAction * actionMoveDone = [SKAction removeFromParent];
+    
+    [projectile runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+}
+
 
 
 -(void)update:(CFTimeInterval)currentTime {
