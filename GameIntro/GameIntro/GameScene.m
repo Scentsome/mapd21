@@ -93,7 +93,7 @@
 - (void)didMoveToView:(SKView *)view {
     
     monsterDestoryed = 0;
-    [self playBackgroundMusic:@"background-music-aac.caf"];
+//    [self playBackgroundMusic:@"background-music-aac.caf"];
 
     
     self.backgroundMusicPlayer.delegate = self;
@@ -105,9 +105,10 @@
     [self addChild:self.player];
     
 //    [self addMonster];
-    
+    __weak GameScene * weakSelf = self;
+
     [self.player runAction:[SKAction repeatActionForever:[SKAction sequence:@[ [SKAction runBlock:^{
-        [self addMonster];
+        [weakSelf addMonster];
     }],[SKAction waitForDuration:1.0]]]]];
     
     self.physicsWorld.gravity = CGVectorMake(0, 0);
@@ -148,16 +149,16 @@
     SKAction * actionMoveDone = [SKAction removeFromParent];
     
 //    [monster runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
-    
+    __weak GameScene * weakSelf = self;
     SKAction * loseAction = [SKAction runBlock:^{
-        [self.backgroundMusicPlayer stop];
-        self.backgroundMusicPlayer = nil;
+        [weakSelf.backgroundMusicPlayer stop];
+        weakSelf.backgroundMusicPlayer = nil;
 //        self.backgroundMusicPlayer = nil;
         
         SKTransition * reveal = [SKTransition flipHorizontalWithDuration:0.5];
         
         GameOverScene * gameOverScene = [[GameOverScene alloc] initWithSize:self.size win:false];
-        [self.view presentScene:gameOverScene transition:reveal];
+        [weakSelf.view presentScene:gameOverScene transition:reveal];
         
         
     }];
@@ -261,6 +262,6 @@
 //    NSLog(@"%d",currentTime);
 }
 -(void) dealloc {
-    NSLog(@"destroy game scene");
+    NSLog(@"....destroy game scene");
 }
 @end
