@@ -15,6 +15,17 @@
 
 @implementation GameScene
 
+-(CGFloat) random{
+    CGFloat randomFloat =((float)arc4random())/0xFFFFFFFF;
+    return randomFloat;
+}
+
+
+-(CGFloat) random:(CGFloat)theMin toMax:(CGFloat)theMax{
+    
+    return [self random]* (theMax - theMin) + theMin;
+}
+
 - (void)didMoveToView:(SKView *)view {
     self.backgroundColor = [SKColor whiteColor];
     
