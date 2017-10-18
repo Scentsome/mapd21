@@ -26,6 +26,22 @@
     return [self random]* (theMax - theMin) + theMin;
 }
 
+-(CGPoint) addFromLeft:(CGPoint)left andRight:(CGPoint) right{
+    return CGPointMake((left.x + right.x), (left.y + right.y));
+}
+
+-(CGPoint) minusFromLeft:(CGPoint)left andRight:(CGPoint) right{
+    return CGPointMake((left.x - right.x), (left.y - right.y));
+}
+
+-(CGPoint) timeFromPoint:(CGPoint)point withScalar:(CGFloat) scalar{
+    return CGPointMake((point.x * scalar), (point.y *scalar));
+}
+
+-(CGPoint) divideFromPoint:(CGPoint)point withScalar:(CGFloat) scalar{
+    return CGPointMake((point.x / scalar), (point.y / scalar));
+}
+
 - (void)didMoveToView:(SKView *)view {
     self.backgroundColor = [SKColor whiteColor];
     
@@ -34,7 +50,11 @@
     self.player.position = CGPointMake(0-self.size.width/2+50, 0);
     [self addChild:self.player];
     
-    [self addMonster];
+//    [self addMonster];
+    
+    [self.player runAction:[SKAction repeatActionForever:[SKAction sequence:@[ [SKAction runBlock:^{
+        [self addMonster];
+    }],[SKAction waitForDuration:1.0]]]]];
 }
 //  GameScene.m
 -(void) addMonster{
